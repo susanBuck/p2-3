@@ -1,0 +1,92 @@
+{
+  "indigo": {
+    "id" : 0,
+    "color": "blue",
+    "name" : "Indigofera tinctoria",
+    "type" : "plant"
+  },
+  "cochineal": {
+    "id" : 1,
+    "color": "red",
+    "name" : "Dactylopus coccus",
+    "type" : "insect"
+  },
+  "tara": {
+    "id" : 2,
+    "color" : "purple / gray",
+    "name" : "Caesalpinia tinctoria,",
+    "type" : "plant"
+  },
+  "kamala": {
+    "id" : 3,
+    "color" : "yellow",
+    "name" : "Mallotus philippensis",
+    "type" : "plant"
+  },
+  "logwood": {
+    "id" : 4,
+    "color" : "purple",
+    "name" : "Haematoxylum campechianum",
+    "type" : "plant"
+  },
+  "himalayan rhubarb": {
+    "id" : 5,
+    "color" : "yellow  / brick red",
+    "name" : "",
+    "type" : "plant"
+  },
+  "pomegranate": {
+    "id" : 6,
+    "color" : "green yellow / blue green",
+    "name" : "Punica granatum",
+    "type" : "plant"
+  },
+  "wattle": {
+    "id" : 7,
+    "color" : "beige / pink",
+    "name" : "",
+    "type" : "plant"
+  },
+  "gall tannin": {
+    "id" : 8,
+    "color" : "beige / gray",
+    "name" : "",
+    "type" : "plant"
+  },
+  "chesnut": {
+    "id" : 9,
+    "color" : "yellow",
+    "name" : "Castanea sativa",
+    "type" : "plant"
+  },
+  "cutch": {
+    "id" : 10,
+    "color" : "red brown / golden yellow brown",
+    "name" : "Acacia catechu",
+    "type" : "plant"
+  },
+  "weld" : {
+    "id" : 11,
+    "color" : "yellow",
+    "name" : "Reseda luteola",
+    "type" : "plant"
+  },
+  "quebracho roho" : {
+    "id" : 12,
+    "color" : "pink peach / brown rose",
+    "name" : "Schinopsis quebracho-colorado",
+    "type" : "plant"
+  },
+  "laca" : {
+    "id" : 13,
+    "color" : "pink red / purple red / burgundy",
+    "name" : "Laccifer lacca",
+    "type" : "plant"
+  },
+  "madder" : {
+    "id" : 14,
+    "color" : "red",
+    "name" : "Rubia tinctorum",
+    "type" : "plant"
+  }
+}
