@@ -21,9 +21,9 @@ nav {
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     flex-flow: row nowrap;
-    height: 7.5vh;
+    height: 7.5%;
     padding: 0 1%;
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 11;
 }
@@ -37,21 +37,60 @@ nav {
 
 /*=====================================================================SLIDE 1*/
 
+html, body {
+    width: 100%;
+}
+
 main {
     background: url('/p2Assets/jj_marksSpots-BKGD.jpg') center center / cover repeat;
     display: flex;
     height: 100vh;
-    justify-content: center;
     position: relative;
     width: 100%;
 }
 
-/* MASK */
+/* MASK ----------------------------------------------------------------------*/
 #maskBox {
+    background-color: rgba(255, 255, 255, 0.8);
     height: 40vw;
-    position: relative;
-    top: 5%;
-    width: 40%;
+    position: absolute;
+    right: 2.5%;
+    top: 12.5%;
+    width: 55%;
+}
+
+.frameBrace {
+    height: 2.5vw;
+    position: absolute;
+    width: 2.5vw;
+}
+
+.fB1 {
+    border-left: 10px solid rgba(0,0,0,0.8);
+    border-top: 10px solid rgba(0,0,0,0.8);
+    left: 1%;
+    top: 1%;
+}
+
+.fB2 {
+    border-right: 10px solid rgba(0,0,0,0.8);
+    border-top: 10px solid rgba(0,0,0,0.8);
+    right: 1%;
+    top: 1%;
+}
+
+.fB3 {
+    border-bottom: 10px solid rgba(0,0,0,0.8);
+    border-left: 10px solid rgba(0,0,0,0.8);
+    left: 1%;
+    bottom: 1%;
+}
+
+.fB4 {
+    border-bottom: 10px solid rgba(0,0,0,0.8);
+    border-right: 10px solid rgba(0,0,0,0.8);
+    right: 1%;
+    bottom: 1%;
 }
 
 #face {
@@ -61,9 +100,9 @@ main {
     height: 0;
     left: 50%;
     position: absolute;
-    top: 15%;
+    top: 5%;
     transform: translateX(-50%) skewY(2.5deg);
-    width: 22.5vw;
+    width: 21vw;
 }
 
 #nose {
@@ -74,7 +113,7 @@ main {
     left: 50%;
     position: absolute;
     transform: translateX(-50%) skewY(-2.5deg);
-    top: 20%;
+    top: 10%;
     width: 5vw;
 }
 
@@ -86,7 +125,7 @@ main {
     left: 50%;
     position: absolute;
     transform: translateX(-50%) skewY(1.5deg);
-    top: 77%;
+    top: 67%;
     width: 12vw;
 }
 
@@ -98,7 +137,7 @@ main {
     left: 50%;
     position: absolute;
     transform: translateX(-50%) skewY(1.5deg);
-    top: 87%;
+    top: 77%;
     width: 12vw;
 }
 
@@ -107,10 +146,10 @@ main {
     border-left: 0.5vw solid transparent;
     border-right: 0.5vw solid transparent;
     height: 0;
-    left: 28%;
+    left: 35%;
     position: absolute;
     transform: skewY(3deg);
-    top: 27%;
+    top: 23%;
     width: 6vw;
 }
 
@@ -119,10 +158,10 @@ main {
     border-left: 0.5vw solid transparent;
     border-right: 0.5vw solid transparent;
     height: 0;
-    left: 28%;
+    left: 35%;
     position: absolute;
     transform: skewY(-3deg);
-    top: 32%;
+    top: 17%;
     width: 6vw;
 }
 
@@ -131,10 +170,10 @@ main {
     border-left: 0.5vw solid transparent;
     border-right: 0.5vw solid transparent;
     height: 0;
-    right: 28%;
+    right: 35%;
     position: absolute;
     transform: skewY(-2deg);
-    top: 28%;
+    top: 23%;
     width: 6vw;
 }
 
@@ -143,27 +182,30 @@ main {
     border-left: 0.5vw solid transparent;
     border-right: 0.5vw solid transparent;
     height: 0;
-    right: 28%;
+    right: 35%;
     position: absolute;
     transform: skewY(2deg);
-    top: 33%;
+    top: 18%;
     width: 6vw;
 }
 
-/* FORM */
-.formFloat {
-    padding: 2.5% 2.5%;
-    position: absolute;
-}
+/* FORM ----------------------------------------------------------------------*/
 
-.fF1 {
-    background-color: rgba(255, 255, 255, 1);
+form {
     left: 2.5%;
-    top: 15%;
+    position: absolute;
+    width: 37.5%;
+    top: 12.5%;
 }
 
-.fF1 h1 {
-    border-bottom: 4px solid rgba(0,0,0,1);
+.formFloat {
+    background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 2.5%;
+    padding: 2.5%;
+}
+
+.formFloat h1 {
+    border-bottom: 4px solid rgba(0, 0, 0, 1);
     padding-bottom: 2%;
 
     font-family: 'Roboto', sans-serif;
@@ -173,8 +215,9 @@ main {
 }
 
 .fF1 label {
-    display: block;
-    padding: 3% 0;
+    align-items: center;
+    display: inline-flex;
+    padding: 5% 2.5% 0;
 
     font-family: Roboto, sans-serif;
     font-size: 1.25vw;
@@ -197,15 +240,61 @@ main {
     letter-spacing: 0.28rem;
 }
 
+.fF1 select {
+    background-color: rgba(0,0,0,0.1);
+}
 
+.fF2 label {
+    align-items: center;
+    display: inline-flex;
+    padding: 5% 7.5% 0;
 
+    font-family: Roboto, sans-serif;
+    font-size: 1vw;
+    letter-spacing: 0.1rem;
+    text-transform: lowercase;
+}
 
+.fF2 span {
+    display: block;
+    padding-left: 10%;
+}
 
+.fF3 label {
+    align-items: center;
+    display: flex;
+    padding: 0 3%;
 
+    font-family: Roboto, sans-serif;
+    font-size: 1.25vw;
+    font-style: italic;
+    letter-spacing: 0.4rem;
+    text-transform: lowercase;
+}
 
+.fF3 input {
+    font-size: 3rem;
+}
 
+.fF3 span {
+    display: block;
+    padding-left: 5%;
+}
 
+.fF4 {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 100%;
 
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2vw;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.fF4:hover {
+    background-color: rgb(14, 14, 82);
+}
 
 
 

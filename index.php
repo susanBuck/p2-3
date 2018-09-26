@@ -13,11 +13,15 @@
 <body>
 
 <nav>
-    <a id="myName" href="#"> Jared Jessup</a>
+    <a id="myName" href="#"></a>
 </nav>
 
 <main>
     <div id='maskBox'>
+        <div class='frameBrace fB1'></div>
+        <div class='frameBrace fB2'></div>
+        <div class='frameBrace fB3'></div>
+        <div class='frameBrace fB4'></div>
         <div id='face'></div>
         <div id='nose'></div>
         <div id='topLip'></div>
@@ -31,7 +35,7 @@
         <section class='formFloat fF1'>
             <h1>"C-Y-D" (Choose Your Dyes)</h1>
             <label>Face ::
-                <select type='checkbox' name='face'>
+                <select name='face'>
                     <option value='none'>none</option>
                     <option value='chesnut'>chesnut</option>
                     <option value='cochineal'>cochineal</option>
@@ -51,7 +55,7 @@
                 </select>
             </label>
             <label>Eyes ::
-                <select type='checkbox' name='eyes'>
+                <select name='eyes'>
                     <option value='none'>none</option>
                     <option value='chesnut'>chesnut</option>
                     <option value='cochineal'>cochineal</option>
@@ -71,7 +75,7 @@
                 </select>
             </label>
             <label>Nose ::
-                <select type='checkbox' name='nose'>
+                <select name='nose'>
                     <option value='none'>none</option>
                     <option value='chesnut'>chesnut</option>
                     <option value='cochineal'>cochineal</option>
@@ -91,7 +95,7 @@
                 </select>
             </label>
             <label>Lips ::
-                <select type='checkbox' name='lips'>
+                <select name='lips'>
                     <option value='none'>none</option>
                     <option value='chesnut'>chesnut</option>
                     <option value='cochineal'>cochineal</option>
@@ -111,6 +115,37 @@
                 </select>
             </label>
         </section>
+
+        <section class='formFloat fF2'>
+            <h1>"L-S-N" (Learn Something New)</h1>
+            <fieldset>
+                <label>
+                    <input type='radio' name='lsn' checked>
+                    <span>Description&nbsp;Type</span>
+                </label>
+                <label>
+                    <input type='radio' name='lsn'>
+                    <span>Scientific&nbsp;Name</span>
+                </label>
+                <label>
+                    <input type='radio' name='lsn'>
+                    <span>Color&nbsp;Range</span>
+                </label>
+                <label>
+                    <input type='radio' name='lsn'>
+                    <span>Geographical&nbsp;Region</span>
+                </label>
+            </fieldset>
+        </section>
+
+        <div class='formFloat fF3'>
+            <label>
+                <input type='checkbox' name='lsn'>
+                <span>Add an indigo overlay</span>
+            </label>
+        </div>
+
+        <input class='formFloat fF4' type='submit' value='Dye It!'>
 
     </form>
 </main>

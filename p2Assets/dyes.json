@@ -1,92 +1,144 @@
 {
-  "indigo": {
+
+  "alkanet": {
     "id" : 0,
-    "color": "blue",
-    "name" : "Indigofera tinctoria",
-    "type" : "plant"
+    "color": ["lavendar", "violet"],
+    "geography": ["Central Europe", "Central Asia", "North Africa"],
+    "name" : "Alkanna tinctoria",
+    "type" : "plant dye"
   },
-  "cochineal": {
+  "brazilwood": {
     "id" : 1,
-    "color": "red",
-    "name" : "Dactylopus coccus",
-    "type" : "insect"
+    "color": ["warm red", "deep crimson"],
+    "geography": ["Brazil", "East Asia"],
+    "name" : "Caesalpinia",
+    "type" : "plant dye"
   },
-  "tara": {
-    "id" : 2,
-    "color" : "purple / gray",
-    "name" : "Caesalpinia tinctoria,",
-    "type" : "plant"
-  },
-  "kamala": {
-    "id" : 3,
-    "color" : "yellow",
-    "name" : "Mallotus philippensis",
-    "type" : "plant"
-  },
-  "logwood": {
-    "id" : 4,
-    "color" : "purple",
-    "name" : "Haematoxylum campechianum",
-    "type" : "plant"
-  },
-  "himalayan rhubarb": {
-    "id" : 5,
-    "color" : "yellow  / brick red",
-    "name" : "",
-    "type" : "plant"
-  },
-  "pomegranate": {
-    "id" : 6,
-    "color" : "green yellow / blue green",
-    "name" : "Punica granatum",
-    "type" : "plant"
-  },
-  "wattle": {
-    "id" : 7,
-    "color" : "beige / pink",
-    "name" : "",
-    "type" : "plant"
-  },
-  "gall tannin": {
-    "id" : 8,
-    "color" : "beige / gray",
-    "name" : "",
-    "type" : "plant"
+  "chamomile": {
+    "id" : 9,
+    "color" : ["pale yellow", "strong yellow"],
+    "geography": ["North America", "Europe", "the Himalaya region"],
+    "name" : "Anthemis tinctoria",
+    "type" : "plant dye"
   },
   "chesnut": {
     "id" : 9,
-    "color" : "yellow",
+    "color" : ["yellow", "warm brown"],
+    "geography": ["Southern Europe"],
     "name" : "Castanea sativa",
-    "type" : "plant"
+    "type" : "plant dye"
+  },
+  "cochineal": {
+    "id" : 9,
+    "color" : ["fuschia", "raspberry"],
+    "geography": ["South America", "Central America", "the Canary Islands"],
+    "name" : "Dactylopius coccus",
+    "type" : "insect dye"
   },
   "cutch": {
     "id" : 10,
-    "color" : "red brown / golden yellow brown",
+    "color" : ["red brown", "golden yellow brown"],
+    "geography": ["India", "Burma", "Indonesia", "Peru"],
     "name" : "Acacia catechu",
-    "type" : "plant"
+    "type" : "plant dye"
   },
+  "henna": {
+    "id" : 10,
+    "color" : ["brown", "red-orange"],
+    "geography": ["Africa", "Southern Asia", "Northern Australia"],
+    "name" : "Lawsonia inermis",
+    "type" : "plant dye"
+  },
+  "indigo": {
+    "id" : 0,
+    "color": ["pale sky", "deep navy"],
+    "name" : "Indigofera tinctoria",
+    "type" : "plant dye",
+    "image" : ""
+  },
+  "lac" : {
+    "id" : 13,
+    "color" : ["pink red", "purple red", "burgundy"],
+    "geography": ["Global"],
+    "name" : "Laccifer lacca",
+    "type" : "insect dye"
+  },
+  "old fustic": {
+    "id" : 10,
+    "color" : ["gold", "orange"],
+    "geography": ["Central America", "South America"],
+    "name" : "Maclura tinctoria",
+    "type" : "plant dye"
+  },
+
+
+
+
+  "tara": {
+    "id" : 2,
+    "color" : ["purple", "gray"],
+    "name" : "Caesalpinia tinctoria,",
+    "type" : "plant",
+    "image" : "/p2Assets/extracts/Indigo.png"
+  },
+  "kamala": {
+    "id" : 3,
+    "color" : ["yellow"],
+    "name" : "Mallotus philippensis",
+    "type" : "plant",
+    "image" : "/p2Assets/extracts/Kamala.png"
+  },
+  "logwood": {
+    "id" : 4,
+    "color" : ["purple"],
+    "name" : "Haematoxylum campechianum",
+    "type" : "plant",
+    "image" : "/p2Assets/extracts/PurpleLogwood.png"
+  },
+  "himalayan rhubarb": {
+    "id" : 5,
+    "color" : ["yellow", "brick red"],
+    "name" : "",
+    "type" : "plant",
+    "image" : "/p2Assets/extracts/HimalayanRhubarb.png"
+  },
+  "pomegranate": {
+    "id" : 6,
+    "color" : ["green yellow", "blue green"],
+    "name" : "Punica granatum",
+    "type" : "plant",
+    "image" : "/p2Assets/extracts/Pomegranate.png"
+  },
+  "wattle": {
+    "id" : 7,
+    "color" : ["beige", "pink"],
+    "name" : "",
+    "type" : "plant",
+    "image" : "/p2Assets/extracts/Wattle.png"
+  },
+
+
+
+
   "weld" : {
     "id" : 11,
-    "color" : "yellow",
+    "color" : ["yellow"],
     "name" : "Reseda luteola",
-    "type" : "plant"
+    "type" : "plant",
+    "image" : "/p2Assets/extracts/Weld.png"
   },
   "quebracho roho" : {
     "id" : 12,
-    "color" : "pink peach / brown rose",
+    "color" : ["pink peach", "brown rose"],
     "name" : "Schinopsis quebracho-colorado",
-    "type" : "plant"
-  },
-  "laca" : {
-    "id" : 13,
-    "color" : "pink red / purple red / burgundy",
-    "name" : "Laccifer lacca",
-    "type" : "plant"
+    "type" : "plant",
+    "image" : "/p2Assets/extracts/QuebrachoRoho.png"
   },
   "madder" : {
     "id" : 14,
-    "color" : "red",
+    "color" : ["red"],
     "name" : "Rubia tinctorum",
-    "type" : "plant"
+    "type" : "plant",
+    "image" : "/p2Assets/extracts/Madder.png"
   }
 }

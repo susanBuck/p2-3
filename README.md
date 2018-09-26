@@ -4,7 +4,7 @@
 
 ## Outside resources
 1. Ref to [CSS-Tricks](https://css-tricks.com/examples/ShapesOfCSS/) to create shapes.
-2. Images and info on natural dye extracts from [Botanical Colors](https://botanicalcolors.com/product-category/natural-dye-extracts/)
+2. Images and info on natural dye extracts from [Botanical Colors](https://botanicalcolors.com/product-category/natural-dye-extracts/), [Maiwa](https://maiwa.com/pages/natural-dyes)
 
 
 
