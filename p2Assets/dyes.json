@@ -1,10 +1,10 @@
 {
-
   "alkanet": {
     "id" : 0,
     "color": ["lavendar", "violet"],
     "geography": ["Central Europe", "Central Asia", "North Africa"],
     "name" : "Alkanna tinctoria",
+    "rgb" : ["158", "123", "230"],
     "type" : "plant dye"
   },
   "brazilwood": {
@@ -12,6 +12,7 @@
     "color": ["warm red", "deep crimson"],
     "geography": ["Brazil", "East Asia"],
     "name" : "Caesalpinia",
+    "rgb" : ["172", "13", "1"],
     "type" : "plant dye"
   },
   "chamomile": {
@@ -19,6 +20,7 @@
     "color" : ["pale yellow", "strong yellow"],
     "geography": ["North America", "Europe", "the Himalaya region"],
     "name" : "Anthemis tinctoria",
+    "rgb" : ["231", "209", "86"],
     "type" : "plant dye"
   },
   "chesnut": {
@@ -26,6 +28,7 @@
     "color" : ["yellow", "warm brown"],
     "geography": ["Southern Europe"],
     "name" : "Castanea sativa",
+    "rgb" : ["198", "117", "37"],
     "type" : "plant dye"
   },
   "cochineal": {
@@ -33,112 +36,63 @@
     "color" : ["fuschia", "raspberry"],
     "geography": ["South America", "Central America", "the Canary Islands"],
     "name" : "Dactylopius coccus",
+    "rgb" : ["182", "27", "71"],
     "type" : "insect dye"
-  },
-  "cutch": {
-    "id" : 10,
-    "color" : ["red brown", "golden yellow brown"],
-    "geography": ["India", "Burma", "Indonesia", "Peru"],
-    "name" : "Acacia catechu",
-    "type" : "plant dye"
   },
   "henna": {
     "id" : 10,
     "color" : ["brown", "red-orange"],
     "geography": ["Africa", "Southern Asia", "Northern Australia"],
     "name" : "Lawsonia inermis",
+    "rgb" : ["140", "68", "9"],
     "type" : "plant dye"
   },
   "indigo": {
     "id" : 0,
     "color": ["pale sky", "deep navy"],
+    "geography": ["anywhere"],
     "name" : "Indigofera tinctoria",
-    "type" : "plant dye",
-    "image" : ""
+    "rgb" : ["33", "10", "146"],
+    "type" : "plant dye"
   },
   "lac" : {
     "id" : 13,
     "color" : ["pink red", "purple red", "burgundy"],
-    "geography": ["Global"],
+    "geography": ["India", "East Asia"],
     "name" : "Laccifer lacca",
+    "rgb" : ["104", "8", "71"],
     "type" : "insect dye"
-  },
-  "old fustic": {
-    "id" : 10,
-    "color" : ["gold", "orange"],
-    "geography": ["Central America", "South America"],
-    "name" : "Maclura tinctoria",
-    "type" : "plant dye"
-  },
-
-
-
-
-  "tara": {
-    "id" : 2,
-    "color" : ["purple", "gray"],
-    "name" : "Caesalpinia tinctoria,",
-    "type" : "plant",
-    "image" : "/p2Assets/extracts/Indigo.png"
-  },
-  "kamala": {
-    "id" : 3,
-    "color" : ["yellow"],
-    "name" : "Mallotus philippensis",
-    "type" : "plant",
-    "image" : "/p2Assets/extracts/Kamala.png"
   },
   "logwood": {
     "id" : 4,
-    "color" : ["purple"],
+    "color" : ["red purple", "orchid blue"],
+    "geography": ["South America", "Madagascar"],
     "name" : "Haematoxylum campechianum",
-    "type" : "plant",
-    "image" : "/p2Assets/extracts/PurpleLogwood.png"
+    "rgb" : ["62", "28", "118"],
+    "type" : "plant dye"
   },
-  "himalayan rhubarb": {
-    "id" : 5,
-    "color" : ["yellow", "brick red"],
-    "name" : "",
-    "type" : "plant",
-    "image" : "/p2Assets/extracts/HimalayanRhubarb.png"
+  "madder" : {
+    "id" : 14,
+    "color" : ["mulberry", "terracotta"],
+    "geography": ["anywhere"],
+    "name" : "Rubia tinctorum",
+    "rgb" : ["158", "123", "230"],
+    "type" : "plant dye"
   },
   "pomegranate": {
     "id" : 6,
     "color" : ["green yellow", "blue green"],
+    "geography": ["India", "Italy", "China", "North Africa"],
     "name" : "Punica granatum",
-    "type" : "plant",
-    "image" : "/p2Assets/extracts/Pomegranate.png"
+    "rgb" : ["145", "58", "51"],
+    "type" : "plant dye and mordant"
   },
-  "wattle": {
-    "id" : 7,
-    "color" : ["beige", "pink"],
-    "name" : "",
-    "type" : "plant",
-    "image" : "/p2Assets/extracts/Wattle.png"
-  },
-
-
-
-
-  "weld" : {
-    "id" : 11,
-    "color" : ["yellow"],
-    "name" : "Reseda luteola",
-    "type" : "plant",
-    "image" : "/p2Assets/extracts/Weld.png"
-  },
-  "quebracho roho" : {
+  "quebracho" : {
     "id" : 12,
     "color" : ["pink peach", "brown rose"],
+    "geography": ["South America"],
     "name" : "Schinopsis quebracho-colorado",
-    "type" : "plant",
-    "image" : "/p2Assets/extracts/QuebrachoRoho.png"
-  },
-  "madder" : {
-    "id" : 14,
-    "color" : ["red"],
-    "name" : "Rubia tinctorum",
-    "type" : "plant",
-    "image" : "/p2Assets/extracts/Madder.png"
+    "rgb" : ["222", "104", "145"],
+    "type" : "plant dye"
   }
 }

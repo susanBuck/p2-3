@@ -1,3 +1,8 @@
+<?php
+require('p2PHP/helpers.php');
+require('p2PHP/logic.php');
+?>
+
 <!doctype html>
 <html lang='en'>
 <head>
@@ -31,87 +36,75 @@
         <div id='rightLidTop'></div>
         <div id='rightLidBot'></div>
     </div>
-    <form method='GET'>
+    <form method='GET' action='/p2PHP/dye.php'>
         <section class='formFloat fF1'>
             <h1>"C-Y-D" (Choose Your Dyes)</h1>
             <label>Face ::
                 <select name='face'>
                     <option value='none'>none</option>
+                    <option value='alkanet'>alkanet</option>
+                    <option value='brazilwood'>brazilwood</option>
+                    <option value='chamomile'>chamomile</option>
                     <option value='chesnut'>chesnut</option>
                     <option value='cochineal'>cochineal</option>
-                    <option value='cutch'>cutch</option>
-                    <option value='gall_tannin'>gall tannin</option>
-                    <option value='himalayan_rhubarb'>himalayan rhubarb</option>
+                    <option value='henna'>henna</option>
                     <option value='indigo'>indigo</option>
-                    <option value='kamala'>kamala</option>
-                    <option value='laca'>laca</option>
+                    <option value='lac'>lac</option>
                     <option value='logwood'>logwood</option>
                     <option value='madder'>madder</option>
                     <option value='pomegranate'>pomegranate</option>
-                    <option value='quebracho_roho'>quebracho roho</option>
-                    <option value='tara'>tara</option>
-                    <option value='wattle'>wattle</option>
-                    <option value='weld'>weld</option>
+                    <option value='quebracho'>quebracho</option>
                 </select>
             </label>
             <label>Eyes ::
                 <select name='eyes'>
                     <option value='none'>none</option>
+                    <option value='alkanet'>alkanet</option>
+                    <option value='brazilwood'>brazilwood</option>
+                    <option value='chamomile'>chamomile</option>
                     <option value='chesnut'>chesnut</option>
                     <option value='cochineal'>cochineal</option>
-                    <option value='cutch'>cutch</option>
-                    <option value='gall_tannin'>gall tannin</option>
-                    <option value='himalayan_rhubarb'>himalayan rhubarb</option>
+                    <option value='henna'>henna</option>
                     <option value='indigo'>indigo</option>
-                    <option value='kamala'>kamala</option>
-                    <option value='laca'>laca</option>
+                    <option value='lac'>lac</option>
                     <option value='logwood'>logwood</option>
                     <option value='madder'>madder</option>
                     <option value='pomegranate'>pomegranate</option>
-                    <option value='quebracho_roho'>quebracho roho</option>
-                    <option value='tara'>tara</option>
-                    <option value='wattle'>wattle</option>
-                    <option value='weld'>weld</option>
+                    <option value='quebracho'>quebracho</option>
                 </select>
             </label>
             <label>Nose ::
                 <select name='nose'>
                     <option value='none'>none</option>
+                    <option value='alkanet'>alkanet</option>
+                    <option value='brazilwood'>brazilwood</option>
+                    <option value='chamomile'>chamomile</option>
                     <option value='chesnut'>chesnut</option>
                     <option value='cochineal'>cochineal</option>
-                    <option value='cutch'>cutch</option>
-                    <option value='gall_tannin'>gall tannin</option>
-                    <option value='himalayan_rhubarb'>himalayan rhubarb</option>
+                    <option value='henna'>henna</option>
                     <option value='indigo'>indigo</option>
-                    <option value='kamala'>kamala</option>
-                    <option value='laca'>laca</option>
+                    <option value='lac'>lac</option>
                     <option value='logwood'>logwood</option>
                     <option value='madder'>madder</option>
                     <option value='pomegranate'>pomegranate</option>
-                    <option value='quebracho_roho'>quebracho roho</option>
-                    <option value='tara'>tara</option>
-                    <option value='wattle'>wattle</option>
-                    <option value='weld'>weld</option>
+                    <option value='quebracho'>quebracho</option>
                 </select>
             </label>
             <label>Lips ::
                 <select name='lips'>
                     <option value='none'>none</option>
+                    <option value='alkanet'>alkanet</option>
+                    <option value='brazilwood'>brazilwood</option>
+                    <option value='chamomile'>chamomile</option>
                     <option value='chesnut'>chesnut</option>
                     <option value='cochineal'>cochineal</option>
-                    <option value='cutch'>cutch</option>
-                    <option value='gall_tannin'>gall tannin</option>
-                    <option value='himalayan_rhubarb'>himalayan rhubarb</option>
+                    <option value='henna'>henna</option>
                     <option value='indigo'>indigo</option>
-                    <option value='kamala'>kamala</option>
-                    <option value='laca'>laca</option>
+                    <option value='lac'>lac</option>
                     <option value='logwood'>logwood</option>
                     <option value='madder'>madder</option>
                     <option value='pomegranate'>pomegranate</option>
-                    <option value='quebracho_roho'>quebracho roho</option>
-                    <option value='tara'>tara</option>
-                    <option value='wattle'>wattle</option>
-                    <option value='weld'>weld</option>
+                    <option value='quebracho'>quebracho</option>
                 </select>
             </label>
         </section>
@@ -120,19 +113,19 @@
             <h1>"L-S-N" (Learn Something New)</h1>
             <fieldset>
                 <label>
-                    <input type='radio' name='lsn' checked>
+                    <input type='radio' name='lsn' value='type' checked>
                     <span>Description&nbsp;Type</span>
                 </label>
                 <label>
-                    <input type='radio' name='lsn'>
+                    <input type='radio' name='lsn' value='name'>
                     <span>Scientific&nbsp;Name</span>
                 </label>
                 <label>
-                    <input type='radio' name='lsn'>
+                    <input type='radio' name='lsn' value='color'>
                     <span>Color&nbsp;Range</span>
                 </label>
                 <label>
-                    <input type='radio' name='lsn'>
+                    <input type='radio' name='lsn' value='geography'>
                     <span>Geographical&nbsp;Region</span>
                 </label>
             </fieldset>
@@ -140,7 +133,7 @@
 
         <div class='formFloat fF3'>
             <label>
-                <input type='checkbox' name='lsn'>
+                <input type='checkbox' name='addIndigo'>
                 <span>Add an indigo overlay</span>
             </label>
         </div>
