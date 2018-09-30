@@ -66,35 +66,35 @@ main {
 }
 
 .fB1 {
-    border-left: 10px solid rgba(0,0,0,0.8);
-    border-top: 10px solid rgba(0,0,0,0.8);
+    border-left: 10px solid rgba(0, 0, 0, 0.8);
+    border-top: 10px solid rgba(0, 0, 0, 0.8);
     left: 1%;
     top: 1%;
 }
 
 .fB2 {
-    border-right: 10px solid rgba(0,0,0,0.8);
-    border-top: 10px solid rgba(0,0,0,0.8);
+    border-right: 10px solid rgba(0, 0, 0, 0.8);
+    border-top: 10px solid rgba(0, 0, 0, 0.8);
     right: 1%;
     top: 1%;
 }
 
 .fB3 {
-    border-bottom: 10px solid rgba(0,0,0,0.8);
-    border-left: 10px solid rgba(0,0,0,0.8);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+    border-left: 10px solid rgba(0, 0, 0, 0.8);
     left: 1%;
     bottom: 1%;
 }
 
 .fB4 {
-    border-bottom: 10px solid rgba(0,0,0,0.8);
-    border-right: 10px solid rgba(0,0,0,0.8);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.8);
+    border-right: 10px solid rgba(0, 0, 0, 0.8);
     right: 1%;
     bottom: 1%;
 }
 
 #face {
-    border-top: 35vw solid red;
+    border-top: 35vw solid transparent;
     border-left: 3.75vw solid transparent;
     border-right: 3.75vw solid transparent;
     height: 0;
@@ -106,7 +106,7 @@ main {
 }
 
 #nose {
-    border-bottom: 20vw solid black;
+    border-bottom: 20vw solid transparent;
     border-left: 2vw solid transparent;
     border-right: 2vw solid transparent;
     height: 0;
@@ -118,7 +118,7 @@ main {
 }
 
 #topLip {
-    border-bottom: 2.5vw solid black;
+    border-bottom: 2.5vw solid transparent;
     border-left: 5vw solid transparent;
     border-right: 5vw solid transparent;
     height: 0;
@@ -130,7 +130,7 @@ main {
 }
 
 #botLip {
-    border-top: 5vw solid black;
+    border-top: 5vw solid transparent;
     border-left: 5.5vw solid transparent;
     border-right: 5.5vw solid transparent;
     height: 0;
@@ -142,7 +142,7 @@ main {
 }
 
 #leftLidTop {
-    border-bottom: 1.25vw solid black;
+    border-bottom: 1.25vw solid transparent;
     border-left: 0.5vw solid transparent;
     border-right: 0.5vw solid transparent;
     height: 0;
@@ -154,7 +154,7 @@ main {
 }
 
 #leftLidBot {
-    border-top: 1.25vw solid black;
+    border-top: 1.25vw solid transparent;
     border-left: 0.5vw solid transparent;
     border-right: 0.5vw solid transparent;
     height: 0;
@@ -166,7 +166,7 @@ main {
 }
 
 #rightLidTop {
-    border-bottom: 1.25vw solid black;
+    border-bottom: 1.25vw solid transparent;
     border-left: 0.5vw solid transparent;
     border-right: 0.5vw solid transparent;
     height: 0;
@@ -178,7 +178,7 @@ main {
 }
 
 #rightLidBot {
-    border-top: 1.25vw solid black;
+    border-top: 1.25vw solid transparent;
     border-left: 0.5vw solid transparent;
     border-right: 0.5vw solid transparent;
     height: 0;
@@ -229,19 +229,19 @@ form {
 }
 
 .fF1 label:nth-of-type(2) {
-    letter-spacing: 0.22rem;
-}
-
-.fF1 label:nth-of-type(3) {
     letter-spacing: 0.2rem;
 }
 
-.fF1 label:nth-of-type(4) {
+.fF1 label:nth-of-type(3) {
     letter-spacing: 0.28rem;
 }
 
+.fF1 label:nth-of-type(4) {
+    letter-spacing: 0.22rem;
+}
+
 .fF1 select {
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .fF2 label {
@@ -266,14 +266,13 @@ form {
     padding: 0 3%;
 
     font-family: Roboto, sans-serif;
-    font-size: 1.25vw;
     font-style: italic;
     letter-spacing: 0.4rem;
     text-transform: lowercase;
 }
 
 .fF3 input {
-    font-size: 3rem;
+    font-size: 3vw;
 }
 
 .fF3 span {
