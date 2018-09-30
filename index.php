@@ -146,7 +146,7 @@ require 'p2PHP/logic.php';
                         indigo
                     </option>
                     <option value='lac' <?php if (isset($lips) && $lips == "lac") echo "selected='selected'" ?>>
-                    lac
+                        lac
                     </option>
                     <option value='logwood' <?php if (isset($lips) && $lips == "logwood") echo "selected='selected'" ?>>
                         logwood
@@ -238,7 +238,7 @@ require 'p2PHP/logic.php';
         <div class='formFloat fF3'>
             <label>
                 <input type='checkbox' name='addIndigo' <?php if (isset($addIndigo) && $addIndigo) echo "checked" ?>>
-                <span>Add a soft indigo overlay</span>
+                <span>Add an indigo overlay</span>
             </label>
         </div>
 
@@ -246,15 +246,11 @@ require 'p2PHP/logic.php';
 
 
         <?php if (isset($face, $eyes, $nose, $lips)): ?>
-            <div class=formFloat fF5'>
-            <?php if ($face != "none") echo $face ?>
-            </br>
-            <?php if ($nose != "none") echo $nose ?>
-            </br>
-            <?php if ($lips != "none") echo $lips ?>
-            </br>
-            <?php if ($eyes != "none") echo $eyes ?>
-            </br>
+            <div class='formFloat fF5'>
+                <?php if ($face != "none") echo $faceLearn ?>
+                <?php if ($nose != "none") echo $noseLearn ?>
+                <?php if ($lips != "none") echo $lipsLearn ?>
+                <?php if ($eyes != "none") echo $eyesLearn ?>
             </div>
         <?php endif ?>
 

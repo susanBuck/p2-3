@@ -28,67 +28,136 @@ $dyesJSON = file_get_contents('../p2Assets/Data/dyes.json');
 $dyes = json_decode($dyesJSON, true);
 
 // CREATE INSTANCES
-foreach ($dyes as $title => $dye) {
-    # Face Object
-    if ($face == $title) {
-        $faceDye = new Dye($title, $dye);
-    }
-    # Nose Object
-    if ($nose == $title) {
-        $noseDye = new Dye($title, $dye);
-    }
-    # Lips Object
-    if ($lips == $title) {
-        $lipsDye = new Dye($title, $dye);
-    }
-    # Eyes Object
-    if ($eyes == $title) {
-        $eyesDye = new Dye($title, $dye);
-    }
+if ($face != "none") {
+    $faceDye = new Dye($dyes, $face);
+} else {
+    $faceDye = "";
+}
+if ($nose != "none") {
+    $noseDye = new Dye($dyes, $nose);
+} else {
+    $noseDye = "";
+}
+if ($lips != "none") {
+    $lipsDye = new Dye($dyes, $lips);
+} else {
+    $lipsDye = "";
+}
+if ($eyes != "none") {
+    $eyesDye = new Dye($dyes, $eyes);
+} else {
+    $eyesDye = "";
 }
 
 // COLORING SIDE-EFFECT
-# FACE
-if ($faceDye != null && $addIndigo) {
+# Face
+if ($faceDye != "" && $addIndigo) {
     $faceColor = "style='border-top-color: " . $faceDye->styleIndigoOverlay() . ";'";
-} elseif ($faceDye != null) {
+} else if ($faceDye != "") {
     $faceColor = "style='border-top-color: " . $faceDye->styleColor() . ";'";
 } else {
-    $faceDye = "";
     $faceColor = "";
 }
-# NOSE
-if ($noseDye != null && $addIndigo) {
+# Nose
+if ($noseDye != "" && $addIndigo) {
     $noseColor = "style='border-bottom-color: " . $noseDye->styleIndigoOverlay() . ";'";
-} elseif ($noseDye != null) {
+} else if ($noseDye != "") {
     $noseColor = "style='border-bottom-color: " . $noseDye->styleColor() . ";'";
 } else {
-    $noseDye = "";
-    $noseColor = "";
+    $noseColor = "style='border-bottom-color: rgb(255,255,255);'";
 }
-# LIPS
-if ($lipsDye != null && $addIndigo) {
+# Lips
+if ($lipsDye != "" && $addIndigo) {
     $topLipColor = "style='border-bottom-color: " . $lipsDye->styleIndigoOverlay() . ";'";
     $botLipColor = "style='border-top-color: " . $lipsDye->styleIndigoOverlay() . ";'";
-} elseif ($lipsDye != null) {
+} else if ($lipsDye != "") {
     $topLipColor = "style='border-bottom-color: " . $lipsDye->styleColor() . ";'";
     $botLipColor = "style='border-top-color: " . $lipsDye->styleColor() . ";'";
 } else {
-    $lipsDye = "";
-    $topLipColor = "";
-    $botLipColor = "";
+    $topLipColor = "style='border-bottom-color: rgb(255,255,255);'";
+    $botLipColor = "style='border-top-color: rgb(255,255,255);'";
 }
-# EYES
-if ($eyesDye != null && $addIndigo) {
+# Eyes
+if ($eyesDye != "" && $addIndigo) {
     $topLidColor = "style='border-bottom-color: " . $eyesDye->styleIndigoOverlay() . ";'";
     $botLidColor = "style='border-top-color: " . $eyesDye->styleIndigoOverlay() . ";'";
-} elseif ($eyesDye != null) {
+} else if ($eyesDye != "") {
     $topLidColor = "style='border-bottom-color: " . $eyesDye->styleColor() . ";'";
     $botLidColor = "style='border-top-color: " . $eyesDye->styleColor() . ";'";
 } else {
-    $eyesDye = "";
-    $topLidColor = "";
-    $botLidColor = "";
+    $topLidColor = "style='border-bottom-color: rgb(255,255,255);'";
+    $botLidColor = "style='border-top-color: rgb(255,255,255);'";
+}
+
+// LEARNING SIDE-EFFECT
+if ($lsn == "type") {
+    # Face
+    if ($faceDye != "") {
+        $faceLearn = $faceDye->learnType($face);
+    }
+    # Nose
+    if ($noseDye != "" && $nose != $face) {
+        $noseLearn = $noseDye->learnType($nose);
+    }
+    # Lips
+    if ($lipsDye != "" && $lips != $face && $lips != $nose) {
+        $lipsLearn = $lipsDye->learnType($lips);
+    }
+    # Eyes
+    if ($eyesDye != "" && $eyes != $face && $eyes != $nose && $eyes != $lips) {
+        $eyesLearn = $eyesDye->learnType($eyes);
+    }
+} elseif ($lsn == "color") {
+    # Face
+    if ($faceDye != "") {
+        $faceLearn = $faceDye->learnColor($face);
+    }
+    # Nose
+    if ($noseDye != "" && $nose != $face) {
+        $noseLearn = $noseDye->learnColor($nose);
+    }
+    # Lips
+    if ($lipsDye != "" && $lips != $face && $lips != $nose) {
+        $lipsLearn = $lipsDye->learnColor($lips);
+    }
+    # Eyes
+    if ($eyesDye != "" && $eyes != $face && $eyes != $nose && $eyes != $lips) {
+        $eyesLearn = $eyesDye->learnColor($eyes);
+    }
+} else if ($lsn == "name") {
+    # Face
+    if ($faceDye != "") {
+        $faceLearn = $faceDye->learnName($face);
+    }
+    # Nose
+    if ($noseDye != "" && $nose != $face) {
+        $noseLearn = $noseDye->learnName($nose);
+    }
+    # Lips
+    if ($lipsDye != "" && $lips != $face && $lips != $nose) {
+        $lipsLearn = $lipsDye->learnName($lips);
+    }
+    # Eyes
+    if ($eyesDye != "" && $eyes != $face && $eyes != $nose && $eyes != $lips) {
+        $eyesLearn = $eyesDye->learnName($eyes);
+    }
+} else if ($lsn == "geography") {
+    # Face
+    if ($faceDye != "") {
+        $faceLearn = $faceDye->learnGeography($face);
+    }
+    # Nose
+    if ($noseDye != "" && $nose != $face) {
+        $noseLearn = $noseDye->learnGeography($nose);
+    }
+    # Lips
+    if ($lipsDye != "" && $lips != $face && $lips != $nose) {
+        $lipsLearn = $lipsDye->learnGeography($lips);
+    }
+    # Eyes
+    if ($eyesDye != "" && $eyes != $face && $eyes != $nose && $eyes != $lips) {
+        $eyesLearn = $eyesDye->learnGeography($eyes);
+    }
 }
 
 // FILL SESSION WITH VARIABLES
@@ -105,7 +174,11 @@ $_SESSION['results'] = [
     'topLipColor' => $topLipColor,
     'botLipColor' => $botLipColor,
     'topLidColor' => $topLidColor,
-    'botLidColor' => $botLidColor
+    'botLidColor' => $botLidColor,
+    'faceLearn' => $faceLearn,
+    'noseLearn' => $noseLearn,
+    'lipsLearn' => $lipsLearn,
+    'eyesLearn' => $eyesLearn
 ];
 
 // REDIRECT TO PAGE

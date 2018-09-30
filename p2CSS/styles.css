@@ -272,7 +272,7 @@ form {
 }
 
 .fF3 input {
-    font-size: 3vw;
+    font-size: 3rem;
 }
 
 .fF3 span {
@@ -294,6 +294,18 @@ form {
 .fF4:hover {
     background-color: rgb(14, 14, 82);
 }
+
+.fF5 {
+    color: midnightblue;
+    font-family: Roboto, sans-serif;
+    font-size: 0.9vw;
+    letter-spacing: 0.1rem;
+}
+
+.fF5 p {
+    padding: 0.375% 0;
+}
+
 
 
 

@@ -19,6 +19,10 @@ if (isset($_SESSION['results'])) {
     $botLipColor = $results['botLipColor'];
     $topLidColor = $results['topLidColor'];
     $botLidColor = $results['botLidColor'];
+    $faceLearn = $results['faceLearn'];
+    $noseLearn = $results['noseLearn'];
+    $lipsLearn = $results['lipsLearn'];
+    $eyesLearn = $results['eyesLearn'];
 }
 
 // CLEAR SESSION

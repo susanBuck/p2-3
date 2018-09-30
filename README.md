@@ -5,6 +5,7 @@
 ## Outside resources
 1. Ref to [CSS-Tricks](https://css-tricks.com/examples/ShapesOfCSS/) to create shapes.
 2. Info on natural dye extracts from [Botanical Colors](https://botanicalcolors.com/product-category/natural-dye-extracts/), [Maiwa](https://maiwa.com/pages/natural-dyes) and [Wild Colours](http://www.wildcolours.co.uk/index.html)
+3. Insight on black circle HTML unicode from user SLaks on [Stack Overflow](https://stackoverflow.com/questions/4521381/bigger-version-of-bull).
 
 
 
