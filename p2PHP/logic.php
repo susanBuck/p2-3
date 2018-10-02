@@ -5,8 +5,11 @@ session_start();
 
 // GET SESSION DATA
 if (isset($_SESSION['results'])) {
+
     $results = $_SESSION['results'];
 
+    $errors = $results['errors'];
+    $hasErrors = $results['hasErrors'];
     $face = $results['face'];
     $nose = $results['nose'];
     $lips = $results['lips'];

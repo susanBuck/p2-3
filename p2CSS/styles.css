@@ -296,10 +296,17 @@ form {
 }
 
 .fF5 {
-    color: midnightblue;
     font-family: Roboto, sans-serif;
     font-size: 0.9vw;
     letter-spacing: 0.1rem;
+}
+
+.fF5A {
+    color: red;
+}
+
+.fF5B {
+    color: midnightblue;
 }
 
 .fF5 p {

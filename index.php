@@ -27,14 +27,14 @@ require 'p2PHP/logic.php';
         <div class='frameBrace fB2'></div>
         <div class='frameBrace fB3'></div>
         <div class='frameBrace fB4'></div>
-        <div id='face' <?php if (isset($face)) echo $faceColor ?>></div>
-        <div id='nose' <?php if (isset($nose)) echo $noseColor ?>></div>
-        <div id='topLip' <?php if (isset($lips)) echo $topLipColor ?>></div>
-        <div id='botLip' <?php if (isset($lips)) echo $botLipColor ?>></div>
-        <div id='leftLidTop' <?php if (isset($eyes)) echo $topLidColor ?>></div>
-        <div id='leftLidBot' <?php if (isset($eyes)) echo $botLidColor ?>></div>
-        <div id='rightLidTop' <?php if (isset($eyes)) echo $topLidColor ?>></div>
-        <div id='rightLidBot' <?php if (isset($eyes)) echo $botLidColor ?>></div>
+        <div id='face' <?php if (isset($face, $faceColor)) echo $faceColor ?>></div>
+        <div id='nose' <?php if (isset($nose, $noseColor)) echo $noseColor ?>></div>
+        <div id='topLip' <?php if (isset($lips, $topLipColor)) echo $topLipColor ?>></div>
+        <div id='botLip' <?php if (isset($lips, $botLipColor)) echo $botLipColor ?>></div>
+        <div id='leftLidTop' <?php if (isset($eyes, $topLidColor)) echo $topLidColor ?>></div>
+        <div id='leftLidBot' <?php if (isset($eyes, $botLidColor)) echo $botLidColor ?>></div>
+        <div id='rightLidTop' <?php if (isset($eyes, $topLidColor)) echo $topLidColor ?>></div>
+        <div id='rightLidBot' <?php if (isset($eyes, $botLidColor)) echo $botLidColor ?>></div>
     </div>
     <form method='GET' action='/p2PHP/process.php'>
         <section class='formFloat fF1'>
@@ -244,13 +244,20 @@ require 'p2PHP/logic.php';
 
         <input class='formFloat fF4' type='submit' value='Dye It!'>
 
+        <?php if (isset($hasErrors) && $hasErrors): ?>
+            <div class='formFloat fF5 fF5A'>
+                <?php foreach ($errors as $error) : ?>
+                    <p><?= $error ?></p>
+                <?php endforeach ?>
+            </div>
+        <?php endif ?>
 
-        <?php if (isset($face, $eyes, $nose, $lips)): ?>
-            <div class='formFloat fF5'>
-                <?php if ($face != "none") echo $faceLearn ?>
-                <?php if ($nose != "none") echo $noseLearn ?>
-                <?php if ($lips != "none") echo $lipsLearn ?>
-                <?php if ($eyes != "none") echo $eyesLearn ?>
+        <?php if (isset($face, $eyes, $nose, $lips) && isset($hasErrors) && !$hasErrors): ?>
+            <div class='formFloat fF5 fF5B'>
+                <?php if ($face != "none" && isset($faceLearn)) echo $faceLearn ?>
+                <?php if ($nose != "none" && isset($noseLearn)) echo $noseLearn ?>
+                <?php if ($lips != "none" && isset($lipsLearn)) echo $lipsLearn ?>
+                <?php if ($eyes != "none" && isset($eyesLearn)) echo $eyesLearn ?>
             </div>
         <?php endif ?>
 
