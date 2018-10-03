@@ -38,7 +38,7 @@ class MyForm extends Form
                 # Test failed
                 if (!$test) {
                     $method = $rule . 'Message';
-                    $errors[] = $this->$method($parameter) . ' [err-src ' . $fieldName . ']';
+                    $errors[] = '&#x2716; ' . $this->$method($parameter) . ' [err-src ' . $fieldName . ']';
                     # Only indicate one error per field
                     break;
                 }

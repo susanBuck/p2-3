@@ -1,23 +1,42 @@
 # Project 2
-+ By: *your first and last name*
++ By: *Jared Jessup*
 + Production URL: <http://p2.jjessup.me>
 
 ## Outside resources
-1. Ref to [CSS-Tricks](https://css-tricks.com/examples/ShapesOfCSS/) to create shapes.
-2. Info on natural dye extracts from [Botanical Colors](https://botanicalcolors.com/product-category/natural-dye-extracts/), [Maiwa](https://maiwa.com/pages/natural-dyes) and [Wild Colours](http://www.wildcolours.co.uk/index.html)
-3. Insight on black circle HTML unicode from user SLaks on [Stack Overflow](https://stackoverflow.com/questions/4521381/bigger-version-of-bull).
-
-
-
+1. Background artwork adapted from a Malian indigo cloth.
+2. Fonts 'Archivo Black' and 'Roboto' from [Google Fonts](https://fonts.google.com/?selection.family=Archivo+Black|Roboto).
+3. DIY DYE LAB logo text built in AI by vector-manipulating the Khmer MN font.
+4. Ref to [CSS-Tricks](https://css-tricks.com/examples/ShapesOfCSS/) to create `<div>` geometric shapes.
+5. Info on natural dye extracts from [Botanical Colors](https://botanicalcolors.com/product-category/natural-dye-extracts/), [Maiwa](https://maiwa.com/pages/natural-dyes), [Wild Colours](http://www.wildcolours.co.uk/index.html) and Wikipedia articles for corresponding terms.
+6. Insight on black circle HTML unicode from user SLaks on [Stack Overflow](https://stackoverflow.com/questions/4521381/bigger-version-of-bull).
+7. Insight on red 'X' cross HTML unicode from user Bruiser on [Stack Overflow](https://stackoverflow.com/questions/712132/in-html-i-can-make-a-checkmark-with-x2713-is-there-a-corresponding-x-mark)
 
 ## 3 Unique inputs
-*You don't have to list all inputs, just 3 unique ones. The following is an example of what I'd put if my project was the xkcd Password Generator: (1) Text input to indicate number of words in password, (2) Checkbox to indicate whether to include a number (3) Dropdown to indicate what symbol to include*
+(1) "C-Y-D" (Choose Your Dyes) dropdown menu
+    a. Select dyes from 4 drop-down menus to:
+        i. Color four components, 'face', 'nose', 'lips', and 'eyes', upon submit.
+        ii. Frame inputs (2) and (3) upon submit.
+    b. Default "none"
+    c. Form validations inc:
+        i. Will not submit when all values are "none" (error code: `err-src cydn`).
+        ii. Will not submit when 'nose', 'lips' or 'eyes' values equal the 'face' value (error code `err-src cydm`).
+(2) "L-S-N-" (learn Something New) radio buttons
+    a. Click input from 4 categories to retrieve information for 'type', 'name', 'color', 'geography'.
+    b. No default
+    c. Form validation inc:
+        i. Will not submit if no input is selected (error code `err-src lsn`).
+(3) Add an indigo overlay checkbox
+    a. Click to adjust color values of 'face', 'nose', 'lips' and 'eyes' upon submit.
+    b. No default
+    c. No form validation
 
 ## Class
-*List the name of the class you're using, e.g. `Form.php`, `Password.php`, etc.*
+(1) The Dye.php class is used to construct 4 objects and perform relevant functions for form performance.
+(2) The Form.php class is used to get and evaluate form data.
+(3) The MyForm.php class extends Form.php for customization purposes.
 
 ## Code style divergences
-*list any divergences from PSR-1/PSR-2 and course guidelines on code style*
+For single line comments, the `\\` and `#` notation was used heirarchically to organize category and sub-category comments.
 
 ## Notes for instructor
-*any notes for me to refer to while grading; if none, omit this section*
+In process.php, the condition in lines 31-40, manipulates the 'face' value to perform validation using a customValidate method from MyForm.php based on the validate method from Form.php, which may cause confusion when reviewing the error array in lines 52-58.
