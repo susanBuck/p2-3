@@ -3,6 +3,7 @@
 // START SESSION
 session_start();
 
+
 // GET SESSION DATA
 if (isset($_SESSION['results'])) {
 

@@ -18,7 +18,7 @@ require 'p2PHP/logic.php';
 <body>
 
 <nav>
-    <a id="myName" href="#"></a>
+    <a id='diyDye' href='index.php'><img src='/p2Assets/p2_diyDyeLab.svg' alt='DIY DYE LAB' /></a>
 </nav>
 
 <main>

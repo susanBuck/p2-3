@@ -14,6 +14,10 @@
     text-decoration: none;
 }
 
+html, body {
+    width: 100%;
+}
+
 /*=====================================================================TOP NAV*/
 
 nav {
@@ -28,18 +32,15 @@ nav {
     z-index: 11;
 }
 
-#myName {
-    font-family: 'Archivo Black', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 0.25rem;
-    text-transform: uppercase;
+#diyDye {
+    display: flex;
+    height: 90%;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 /*=====================================================================SLIDE 1*/
 
-html, body {
-    width: 100%;
-}
 
 main {
     background: url('/p2Assets/jj_marksSpots-BKGD.jpg') center center / cover repeat;
@@ -266,13 +267,13 @@ form {
     padding: 0 3%;
 
     font-family: Roboto, sans-serif;
+    font-size: 1.25vw;
     font-style: italic;
     letter-spacing: 0.4rem;
     text-transform: lowercase;
 }
 
 .fF3 input {
-    font-size: 3rem;
 }
 
 .fF3 span {
