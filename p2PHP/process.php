@@ -3,9 +3,10 @@
 require 'Aux/helpers.php';
 require 'Dye.php';
 require 'Form.php';
+require 'MyForm.php';
 
 use P2\Dye;
-use DWA\Form;
+use P2\MyForm;
 
 // START SESSION
 
@@ -13,38 +14,51 @@ session_start();
 
 // INSTANTIATE FORM
 
-$form = new Form($_GET);
+$myForm = new MyForm($_GET);
 
 // CONFIRM SUBMISSION
 
-$submitted = $form->isSubmitted();
+$submitted = $myForm->isSubmitted();
 
 // GET FORM DATA TO VARIABLES
 
-# "C-Y-D" Choose Your Dye
-$face = $form->get('face');
-$nose = $form->get('nose');
-$lips = $form->get('lips');
-$eyes = $form->get('eyes');
+# "C-Y-D" Choose Your Dye: get (Form.php) and validate (MyForm.php)
+$face = $myForm->get('face');
+$nose = $myForm->get('nose');
+$lips = $myForm->get('lips');
+$eyes = $myForm->get('eyes');
+
+if ($face == "none" && $nose == "none" && $lips == "none" && $eyes == "none") {
+    $matchless = "face";
+    $notNone = "cdyn";
+} else if ($face == $nose || $face == $lips || $face == $eyes) {
+    $matchless = "cdym";
+    $notNone = "face";
+} else {
+    $matchless = "face";
+    $notNone = "face";
+}
 
 # "L-S-N" Learn Something New
-$form->has('lsn');
+$myForm->has('lsn');
+$lsn = $myForm->get('lsn');
 
 # Add Indigo Overlay
-$addIndigo = $form->get('addIndigo');
+$addIndigo = $myForm->get('addIndigo');
 
 // VALIDATE
 
 # Errors
-$errors = $form->validate(
+$errors = $myForm->validateCustom(
     [
-        'lsn' => 'required'
+        'lsn' => 'requiredCustom1',
+        $notNone => 'notNoneCustom1',
+        $matchless => 'matchlessCustom1'
     ]
 );
 
 # If Has Errors
-if (!$form->hasErrors) {
-    $lsn = $form->get('lsn');
+if (!$myForm->hasErrors) {
 
     // LOAD DATA
 
@@ -196,7 +210,7 @@ if (!$form->hasErrors) {
 
 $_SESSION['results'] = [
     'errors' => $errors,
-    'hasErrors' => $form->hasErrors,
+    'hasErrors' => $myForm->hasErrors,
     'face' => $face,
     'nose' => $nose,
     'lips' => $lips,
