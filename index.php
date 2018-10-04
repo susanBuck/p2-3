@@ -1,5 +1,4 @@
 <?php
-require 'p2PHP/Aux/helpers.php';
 require 'p2PHP/logic.php';
 ?>
 
@@ -38,44 +37,44 @@ require 'p2PHP/logic.php';
     </div>
     <form method='GET' action='/p2PHP/process.php'>
         <section class='formFloat fF1'>
-            <h1>"C-Y-D" (Choose Your Dyes)</h1>
+            <h1>"C-Y-D" (Choose Your Dyes)*</h1>
             <label>Face ::
                 <select name='face'>
                     <option value='none'>none</option>
-                    <option value='alkanet' <?php if (isset($face) && $face == "alkanet") echo "selected='selected'" ?>>
+                    <option value='alkanet' <?php if (isset($face) && $face == "alkanet") echo "selected" ?>>
                         alkanet
                     </option>
-                    <option value='brazilwood' <?php if (isset($face) && $face == "brazilwood") echo "selected='selected'" ?>>
+                    <option value='brazilwood' <?php if (isset($face) && $face == "brazilwood") echo "selected" ?>>
                         brazilwood
                     </option>
-                    <option value='chamomile' <?php if (isset($face) && $face == "chamomile") echo "selected='selected'" ?>>
+                    <option value='chamomile' <?php if (isset($face) && $face == "chamomile") echo "selected" ?>>
                         chamomile
                     </option>
-                    <option value='chesnut' <?php if (isset($face) && $face == "chesnut") echo "selected='selected'" ?>>
+                    <option value='chesnut' <?php if (isset($face) && $face == "chesnut") echo "selected" ?>>
                         chesnut
                     </option>
-                    <option value='cochineal' <?php if (isset($face) && $face == "cochineal") echo "selected='selected'" ?>>
+                    <option value='cochineal' <?php if (isset($face) && $face == "cochineal") echo "selected" ?>>
                         cochineal
                     </option>
-                    <option value='henna' <?php if (isset($face) && $face == "henna") echo "selected='selected'" ?>>
+                    <option value='henna' <?php if (isset($face) && $face == "henna") echo "selected" ?>>
                         henna
                     </option>
-                    <option value='indigo' <?php if (isset($face) && $face == "indigo") echo "selected='selected'" ?>>
+                    <option value='indigo' <?php if (isset($face) && $face == "indigo") echo "selected" ?>>
                         indigo
                     </option>
-                    <option value='lac' <?php if (isset($face) && $face == "lac") echo "selected='selected'" ?>>
+                    <option value='lac' <?php if (isset($face) && $face == "lac") echo "selected" ?>>
                         lac
                     </option>
-                    <option value='logwood' <?php if (isset($face) && $face == "logwood") echo "selected='selected'" ?>>
+                    <option value='logwood' <?php if (isset($face) && $face == "logwood") echo "selected" ?>>
                         logwood
                     </option>
-                    <option value='madder' <?php if (isset($face) && $face == "madder") echo "selected='selected'" ?>>
+                    <option value='madder' <?php if (isset($face) && $face == "madder") echo "selected" ?>>
                         madder
                     </option>
-                    <option value='pomegranate' <?php if (isset($face) && $face == "pomegranate") echo "selected='selected'" ?>>
+                    <option value='pomegranate' <?php if (isset($face) && $face == "pomegranate") echo "selected" ?>>
                         pomegranate
                     </option>
-                    <option value='quebracho' <?php if (isset($face) && $face == "quebracho") echo "selected='selected'" ?>>
+                    <option value='quebracho' <?php if (isset($face) && $face == "quebracho") echo "selected" ?>>
                         quebracho
                     </option>
                 </select>
@@ -83,81 +82,82 @@ require 'p2PHP/logic.php';
             <label>Nose ::
                 <select name='nose'>
                     <option value='none'>none</option>
-                    <option value='alkanet' <?php if (isset($nose) && $nose == "alkanet") echo "selected='selected'" ?>>
+                    <option value='alkanet' <?php if (isset($nose) && $nose == "alkanet") echo "selected" ?>>
                         alkanet
                     </option>
-                    <option value='brazilwood' <?php if (isset($nose) && $nose == "brazilwood") echo "selected='selected'" ?>>
+                    <option value='brazilwood' <?php if (isset($nose) && $nose == "brazilwood") echo "selected" ?>>
                         brazilwood
                     </option>
-                    <option value='chamomile' <?php if (isset($nose) && $nose == "chamomile") echo "selected='selected'" ?>>
+                    <option value='chamomile' <?php if (isset($nose) && $nose == "chamomile") echo "selected" ?>>
                         chamomile
                     </option>
-                    <option value='chesnut' <?php if (isset($nose) && $nose == "chesnut") echo "selected='selected'" ?>>
+                    <option value='chesnut' <?php if (isset($nose) && $nose == "chesnut") echo "selected" ?>>
                         chesnut
                     </option>
-                    <option value='cochineal' <?php if (isset($nose) && $nose == "cochineal") echo "selected='selected'" ?>>
+                    <option value='cochineal' <?php if (isset($nose) && $nose == "cochineal") echo "selected" ?>>
                         cochineal
                     </option>
-                    <option value='henna' <?php if (isset($nose) && $nose == "henna") echo "selected='selected'" ?>>
+                    <option value='henna' <?php if (isset($nose) && $nose == "henna") echo "selected" ?>>
                         henna
                     </option>
-                    <option value='indigo' <?php if (isset($nose) && $nose == "indigo") echo "selected='selected'" ?>>
+                    <option value='indigo' <?php if (isset($nose) && $nose == "indigo") echo "selected" ?>>
                         indigo
                     </option>
-                    <option value='lac' <?php if (isset($nose) && $nose == "lac") echo "selected='selected'" ?>>
+                    <option value='lac' <?php if (isset($nose) && $nose == "lac") echo "selected" ?>>
                         lac
                     </option>
-                    <option value='logwood' <?php if (isset($nose) && $nose == "logwood") echo "selected='selected'" ?>>
+                    <option value='logwood' <?php if (isset($nose) && $nose == "logwood") echo "selected" ?>>
                         logwood
                     </option>
-                    <option value='madder' <?php if (isset($nose) && $nose == "madder") echo "selected='selected'" ?>>
+                    <option value='madder' <?php if (isset($nose) && $nose == "madder") echo "selected" ?>>
                         madder
                     </option>
-                    <option value='pomegranate' <?php if (isset($nose) && $nose == "pomegranate") echo "selected='selected'" ?>>
+                    <option value='pomegranate' <?php if (isset($nose) && $nose == "pomegranate") echo "selected" ?>>
                         pomegranate
                     </option>
-                    <option value='quebracho' <?php if (isset($nose) && $nose == "quebracho") echo "selected='selected'" ?>>
+                    <option value='quebracho' <?php if (isset($nose) && $nose == "quebracho") echo "selected" ?>>
                         quebracho
                     </option>
                 </select>
             </label>
+            <br/>
             <label>Lips ::
                 <select name='lips'>
                     <option value='none'>none</option>
-                    <option value='alkanet' <?php if (isset($lips) && $lips == "alkanet") echo "selected='selected'" ?>>
+                    <option value='alkanet' <?php if (isset($lips) && $lips == "alkanet") echo "selected" ?>>
                         alkanet
                     </option>
-                    <option value='brazilwood' <?php if (isset($lips) && $lips == "brazilwood") echo "selected='selected'" ?>>
+                    <option value='brazilwood' <?php if (isset($lips) && $lips == "brazilwood") echo "selected" ?>>
                         brazilwood
                     </option>
-                    <option value='chamomile' <?php if (isset($lips) && $lips == "chamomile") echo "selected='selected'" ?>>
+                    <option value='chamomile' <?php if (isset($lips) && $lips == "chamomile") echo "selected" ?>>
                         chamomile
                     </option>
-                    <option value='chesnut' <?php if (isset($lips) && $lips == "chesnut") echo "selected='selected'" ?>>
+                    <option value='chesnut' <?php if (isset($lips) && $lips == "chesnut") echo "selected" ?>>
                         chesnut
                     </option>
-                    <option value='cochineal' <?php if (isset($lips) && $lips == "cochineal") echo "selected='selected'" ?>>
+                    <option value='cochineal' <?php if (isset($lips) && $lips == "cochineal") echo "selected" ?>>
                         cochineal
                     </option>
-                    <option value='henna' <?php if (isset($lips) && $lips == "henna") echo "selected='selected'" ?>>
+                    <option value='henna' <?php if (isset($lips) && $lips == "henna") echo "selected" ?>>
                         henna
                     </option>
-                    <option value='indigo' <?php if (isset($lips) && $lips == "indigo") echo "selected='selected'" ?>>
+                    <option value='indigo' <?php if (isset($lips) && $lips == "indigo") echo "selected" ?>>
                         indigo
                     </option>
-                    <option value='lac' <?php if (isset($lips) && $lips == "lac") echo "selected='selected'" ?>>
+                    <option value='lac' <?php if (isset($lips) && $lips == "lac") echo "selected" ?>>
                         lac
                     </option>
-                    <option value='logwood' <?php if (isset($lips) && $lips == "logwood") echo "selected='selected'" ?>>
+                    <option value='logwood' <?php if (isset($lips) && $lips == "logwood") echo "selected" ?>>
                         logwood
                     </option>
-                    <option value='madder' <?php if (isset($lips) && $lips == "madder") echo "selected='selected'" ?>>
+                    <option value='madder' <?php if (isset($lips) && $lips == "madder") echo "selected" ?>>
                         madder
                     </option>
-                    <option value='pomegranate' <?php if (isset($lips) && $lips == "pomegranate") echo "selected='selected'" ?>>
+                    <option value='pomegranate' <?php if (isset($lips) && $lips == "pomegranate") echo "selected" ?>>
                         pomegranate
                     </option>
-                    <option value='quebracho' <?php if (isset($lips) && $lips == "quebracho") echo "selected='selected'" ?>>
+                    <option value='quebracho' <?php if (isset($lips) && $lips == "quebracho") echo "selected" ?>>
                         quebracho
                     </option>
                 </select>
@@ -165,40 +165,40 @@ require 'p2PHP/logic.php';
             <label>Eyes ::
                 <select name='eyes'>
                     <option value='none'>none</option>
-                    <option value='alkanet' <?php if (isset($eyes) && $eyes == "alkanet") echo "selected='selected'" ?>>
+                    <option value='alkanet' <?php if (isset($eyes) && $eyes == "alkanet") echo "selected" ?>>
                         alkanet
                     </option>
-                    <option value='brazilwood' <?php if (isset($eyes) && $eyes == "brazilwood") echo "selected='selected'" ?>>
+                    <option value='brazilwood' <?php if (isset($eyes) && $eyes == "brazilwood") echo "selected" ?>>
                         brazilwood
                     </option>
-                    <option value='chamomile' <?php if (isset($eyes) && $eyes == "chamomile") echo "selected='selected'" ?>>
+                    <option value='chamomile' <?php if (isset($eyes) && $eyes == "chamomile") echo "selected" ?>>
                         chamomile
                     </option>
-                    <option value='chesnut' <?php if (isset($eyes) && $eyes == "chesnut") echo "selected='selected'" ?>>
+                    <option value='chesnut' <?php if (isset($eyes) && $eyes == "chesnut") echo "selected" ?>>
                         chesnut
                     </option>
-                    <option value='cochineal' <?php if (isset($eyes) && $eyes == "cochineal") echo "selected='selected'" ?>>
+                    <option value='cochineal' <?php if (isset($eyes) && $eyes == "cochineal") echo "selected" ?>>
                         cochineal
                     </option>
-                    <option value='henna' <?php if (isset($eyes) && $eyes == "henna") echo "selected='selected'" ?>>
+                    <option value='henna' <?php if (isset($eyes) && $eyes == "henna") echo "selected" ?>>
                         henna
                     </option>
-                    <option value='indigo' <?php if (isset($eyes) && $eyes == "indigo") echo "selected='selected'" ?>>
+                    <option value='indigo' <?php if (isset($eyes) && $eyes == "indigo") echo "selected" ?>>
                         indigo
                     </option>
-                    <option value='lac' <?php if (isset($eyes) && $eyes == "lac") echo "selected='selected'" ?>>
+                    <option value='lac' <?php if (isset($eyes) && $eyes == "lac") echo "selected" ?>>
                         lac
                     </option>
-                    <option value='logwood' <?php if (isset($eyes) && $eyes == "logwood") echo "selected='selected'" ?>>
+                    <option value='logwood' <?php if (isset($eyes) && $eyes == "logwood") echo "selected" ?>>
                         logwood
                     </option>
-                    <option value='madder' <?php if (isset($eyes) && $eyes == "madder") echo "selected='selected'" ?>>
+                    <option value='madder' <?php if (isset($eyes) && $eyes == "madder") echo "selected" ?>>
                         madder
                     </option>
-                    <option value='pomegranate' <?php if (isset($eyes) && $eyes == "pomegranate") echo "selected='selected'" ?>>
+                    <option value='pomegranate' <?php if (isset($eyes) && $eyes == "pomegranate") echo "selected" ?>>
                         pomegranate
                     </option>
-                    <option value='quebracho' <?php if (isset($eyes) && $eyes == "quebracho") echo "selected='selected'" ?>>
+                    <option value='quebracho' <?php if (isset($eyes) && $eyes == "quebracho") echo "selected" ?>>
                         quebracho
                     </option>
                 </select>
@@ -206,7 +206,7 @@ require 'p2PHP/logic.php';
         </section>
 
         <section class='formFloat fF2'>
-            <h1>"L-S-N" (Learn Something New)</h1>
+            <h1>"L-S-N" (Learn Something New)*</h1>
             <fieldset>
                 <label>
                     <input type='radio'
@@ -220,6 +220,7 @@ require 'p2PHP/logic.php';
                            value='name' <?php if (isset($lsn) && $lsn == "name") echo "checked" ?>>
                     <span>Scientific&nbsp;Name</span>
                 </label>
+                <br/>
                 <label>
                     <input type='radio'
                            name='lsn'
@@ -238,7 +239,7 @@ require 'p2PHP/logic.php';
         <div class='formFloat fF3'>
             <label>
                 <input type='checkbox' name='addIndigo' <?php if (isset($addIndigo) && $addIndigo) echo "checked" ?>>
-                <span>Add an indigo overlay</span>
+                <span>Add an indigo overlay&nbsp;</span><a>&#9432;</a><a>+ bluish tint</a>
             </label>
         </div>
 

@@ -1,6 +1,5 @@
 <?php
 
-require 'Aux/helpers.php';
 require 'Dye.php';
 require 'Form.php';
 require 'MyForm.php';

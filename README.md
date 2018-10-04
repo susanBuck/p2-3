@@ -9,7 +9,9 @@
 4. Ref to [CSS-Tricks](https://css-tricks.com/examples/ShapesOfCSS/) to create `<div>` geometric shapes.
 5. Info on natural dye extracts from [Botanical Colors](https://botanicalcolors.com/product-category/natural-dye-extracts/), [Maiwa](https://maiwa.com/pages/natural-dyes), [Wild Colours](http://www.wildcolours.co.uk/index.html) and Wikipedia articles for corresponding terms.
 6. Insight on black circle HTML unicode from user SLaks on [Stack Overflow](https://stackoverflow.com/questions/4521381/bigger-version-of-bull).
-7. Insight on red 'X' cross HTML unicode from user Bruiser on [Stack Overflow](https://stackoverflow.com/questions/712132/in-html-i-can-make-a-checkmark-with-x2713-is-there-a-corresponding-x-mark)
+7. Insight on 'X' cross HTML unicode from user Bruiser on [Stack Overflow](https://stackoverflow.com/questions/712132/in-html-i-can-make-a-checkmark-with-x2713-is-there-a-corresponding-x-mark)
+8. Insight on info icon HTML unicode from user Biffen on [Stack Overflow](https://stackoverflow.com/questions/33878539/is-there-an-html-entity-for-an-info-icon)
+9. Revisionary work informed by UX review from classmate Mihika Shilpi.
 
 ## 3 Unique inputs
 (1) "C-Y-D" (Choose Your Dyes) dropdown menu
@@ -40,3 +42,4 @@ For single line comments, the `\\` and `#` notation was used heirarchically to o
 
 ## Notes for instructor
 In process.php, the condition in lines 31-40, manipulates the 'face' value to perform validation using a customValidate method from MyForm.php based on the validate method from Form.php, which may cause confusion when reviewing the error array in lines 52-58.
+As I notice issues with device responsiveness or browser support, I may revise and will update.

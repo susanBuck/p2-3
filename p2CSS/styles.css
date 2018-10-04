@@ -215,6 +215,7 @@ form {
     letter-spacing: 0.15rem;
 }
 
+/* C-Y-D Choose Your Dyes */
 .fF1 label {
     align-items: center;
     display: inline-flex;
@@ -245,6 +246,8 @@ form {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* L-S-N Learn Something New */
+
 .fF2 label {
     align-items: center;
     display: inline-flex;
@@ -261,25 +264,45 @@ form {
     padding-left: 10%;
 }
 
+/* Add Indigo Overlay */
+
 .fF3 label {
     align-items: center;
     display: flex;
     padding: 0 3%;
 
     font-family: Roboto, sans-serif;
-    font-size: 1.25vw;
+    font-size: 1vw;
     font-style: italic;
     letter-spacing: 0.4rem;
     text-transform: lowercase;
-}
-
-.fF3 input {
 }
 
 .fF3 span {
     display: block;
     padding-left: 5%;
 }
+
+.fF3 a:first-of-type {
+    font-style: normal;
+}
+
+.fF3 a:first-of-type:hover + a:last-of-type {
+    display: inline;
+}
+
+.fF3 a:last-of-type {
+    background-color: rgb(33, 10, 146);
+    color: white;
+    display: none;
+    padding: 1% 2%;
+
+    font-size: 0.875vw;
+    font-style: normal;
+    letter-spacing: 0.2rem;
+}
+
+/* Submit */
 
 .fF4 {
     background-color: rgba(0, 0, 0, 1);
@@ -289,12 +312,15 @@ form {
     font-family: 'Archivo Black', sans-serif;
     font-size: 2vw;
     letter-spacing: 0.2rem;
+    line-height: 120%;
     text-transform: uppercase;
 }
 
 .fF4:hover {
     background-color: rgb(14, 14, 82);
 }
+
+/* Results */
 
 .fF5 {
     font-family: Roboto, sans-serif;
@@ -303,7 +329,8 @@ form {
 }
 
 .fF5A {
-    color: red;
+    background-color: red;
+    color: white;
 }
 
 .fF5B {
@@ -314,8 +341,221 @@ form {
     padding: 0.375% 0;
 }
 
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+					BkPt1. Comp Browser 1200px
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
 
+@media only screen and (max-width: 1200px) {
 
+    .fF3 label {
+        letter-spacing: 0.3rem;
+    }
+}
 
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+					BkPt2. Comp Browser 992px
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
 
+@media only screen and (max-width: 992px) {
+
+    .fF3 label {
+        letter-spacing: 0.2rem;
+    }
+}
+
+/*_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+					BkPt3. Comp Browser 768px
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-*/
+
+@media only screen and (max-width: 768px) {
+
+    main {
+        background: url('/p2Assets/jj_marksSpots-BKGD.jpg') center center / 150% repeat;
+        height: 175vh;
+        justify-content: center;
+    }
+
+    /* MASK ----------------------------------------------------------------------*/
+
+    #maskBox {
+        height: 61.82vw;
+        right: 50%;
+        top: 55%;
+        transform: translateX(50%);
+        width: 85%;
+    }
+
+    .frameBrace {
+        height: 5vw;
+        width: 5vw;
+    }
+
+    .fB1 {
+        left: 2%;
+        top: 2%;
+    }
+
+    .fB2 {
+        right: 2%;
+        top: 2%;
+    }
+
+    .fB3 {
+        left: 2%;
+        bottom: 2%;
+    }
+
+    .fB4 {
+        right: 1%;
+        bottom: 1%;
+    }
+
+    #face {
+        border-top: 52.5vw solid transparent;
+        border-left: 5vw solid transparent;
+        border-right: 5vw solid transparent;
+        top: 7.5%;
+        width: 31.5vw;
+    }
+
+    #nose {
+        border-bottom: 30vw solid transparent;
+        border-left: 3vw solid transparent;
+        border-right: 3vw solid transparent;
+        top: 12.5%;
+        width: 7.5vw;
+    }
+
+    #topLip {
+        border-bottom: 4vw solid transparent;
+        border-left: 6vw solid transparent;
+        border-right: 6vw solid transparent;
+        top: 66.5%;
+        width: 14vw;
+    }
+
+    #botLip {
+        border-top: 7.5vw solid transparent;
+        border-left: 6.5vw solid transparent;
+        border-right: 6.5vw solid transparent;
+        top: 76.5%;
+        width: 14vw;
+    }
+
+    #leftLidTop {
+        border-bottom: 1.25vw solid transparent;
+        border-left: 0.5vw solid transparent;
+        border-right: 0.5vw solid transparent;
+        height: 0;
+        left: 35%;
+        position: absolute;
+        transform: skewY(3deg);
+        top: 23%;
+        width: 6vw;
+    }
+
+    #leftLidBot {
+        border-top: 1.25vw solid transparent;
+        border-left: 0.5vw solid transparent;
+        border-right: 0.5vw solid transparent;
+        height: 0;
+        left: 35%;
+        position: absolute;
+        transform: skewY(-3deg);
+        top: 17%;
+        width: 6vw;
+    }
+
+    #rightLidTop {
+        border-bottom: 1.25vw solid transparent;
+        border-left: 0.5vw solid transparent;
+        border-right: 0.5vw solid transparent;
+        height: 0;
+        right: 35%;
+        position: absolute;
+        transform: skewY(-2deg);
+        top: 23%;
+        width: 6vw;
+    }
+
+    #rightLidBot {
+        border-top: 1.25vw solid transparent;
+        border-left: 0.5vw solid transparent;
+        border-right: 0.5vw solid transparent;
+        height: 0;
+        right: 35%;
+        position: absolute;
+        transform: skewY(2deg);
+        top: 18%;
+        width: 6vw;
+    }
+
+    /* FORM ----------------------------------------------------------------------*/
+
+    form {
+        left: 50%;
+        width: 85%;
+        transform: translateX(-50%);
+        top: 7.5%;
+    }
+
+    .formFloat {
+        margin-bottom: 2%;
+        padding: 2.5%;
+    }
+
+    .formFloat h1 {
+        font-size: 3vw;
+    }
+
+    /* C-Y-D Choose Your Dyes */
+    .fF1 label {
+        padding: 3.75% 2.5% 0;
+
+        font-size: 2.25vw;
+    }
+
+    /* L-S-N Learn Something New */
+
+    .fF2 label {
+        padding: 2.5% 7.5% 0;
+
+        font-size: 2vw;
+        letter-spacing: 0.1rem;
+        text-transform: lowercase;
+    }
+
+    /* Add Indigo Overlay */
+
+    .fF3 label {
+
+        font-size: 2vw;
+        letter-spacing: 0.4rem;
+    }
+
+    .fF3 span {
+        padding-left: 3.75%;
+    }
+
+    .fF3 a:last-of-type {
+        font-size: 1.75vw;
+    }
+
+    /* Submit */
+
+    .fF4 {
+        font-size: 4vw;
+        line-height: 100%;
+    }
+
+    .fF4:hover {
+        background-color: rgb(14, 14, 82);
+    }
+
+    /* Results */
+
+    .fF5 {
+        font-size: 1.8vw;
+    }
+}
 
